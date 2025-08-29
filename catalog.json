@@ -11,6 +11,17 @@
         "hello"
       ],
       "description": "Tiny sample capture"
+    },
+    {
+      "filename": "mycapture.pcap",
+      "sha256": "5ca4c6b0af72b0196d817baff05ecb4c4ce13879dd2164737e8086ff6516efef",
+      "size_bytes": 28884,
+      "protocols": [],
+      "tags": [
+        "dns",
+        "training"
+      ],
+      "description": "Short description"
     }
   ]
 }
