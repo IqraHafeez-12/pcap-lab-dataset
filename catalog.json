@@ -1,0 +1,16 @@
+{
+  "catalog": "My Lab PCAPs",
+  "items": [
+    {
+      "filename": "hello.pcap",
+      "sha256": "33486c87aeb44cdf6992609448f6f4ad54f126dd25093c73640d3b84252ff608",
+      "size_bytes": 236814,
+      "protocols": [],
+      "tags": [
+        "test",
+        "hello"
+      ],
+      "description": "Tiny sample capture"
+    }
+  ]
+}

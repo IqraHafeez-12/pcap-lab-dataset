@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PCAP Catalog",
+  "type": "object",
+  "required": ["catalog", "items"],
+  "properties": {
+    "catalog": {
+      "type": "string",
+      "description": "Name of the catalog"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["filename", "sha256", "size_bytes", "tags"],
+        "properties": {
+          "filename": { "type": "string" },
+          "sha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+          "size_bytes": { "type": "integer" },
+          "protocols": { "type": "array", "items": { "type": "string" } },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "description": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
